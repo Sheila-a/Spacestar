@@ -1,12 +1,57 @@
 .Grow {
-  display: flex;
-  justify-content: space-between;
   background: #194185;
   padding: 150px 0 50px 0;
-  align-items: center;
   color: #fcfcfd;
+  position: relative;
+}
+
+.Grow2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Grow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(../../assets/left_ellipse.png);
+  opacity: 0.2;
+  background-position: top left;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.Grow::after {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url(../../assets/bottom_elipse.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.Grow2::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/right_elipse.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 3;
+  opacity: 0.2;
 }
 
 .Grow_left {
@@ -15,6 +60,10 @@
 
 .Grow_left_middle span {
   color: #b2ddff;
+  background-image: url('../../assets/Vector.png');
+  background-repeat: no-repeat;
+  padding: 0 0 15px 0;
+  background-position: bottom;
 }
 
 .Grow_left_middle {
@@ -30,7 +79,7 @@
 
 .Grow_left_middle p {
   width: 440px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .Grow_right {
