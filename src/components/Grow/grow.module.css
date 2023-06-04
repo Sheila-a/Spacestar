@@ -1,0 +1,41 @@
+.Grow {
+  display: flex;
+  justify-content: space-between;
+  background: #194185;
+  padding: 150px 0 50px 0;
+  align-items: center;
+  color: #fcfcfd;
+  background-image: url(../../assets/left_ellipse.png);
+  background-repeat: no-repeat;
+}
+
+.Grow_left {
+  padding-left: 8vw;
+}
+
+.Grow_left_middle span {
+  color: #b2ddff;
+}
+
+.Grow_left_middle {
+  margin: 40px 0 60px 0;
+}
+
+.Grow_left_middle h1 {
+  font-size: 60px;
+  line-height: 62px;
+  width: 500px;
+  letter-spacing: -0.02em;
+}
+
+.Grow_left_middle p {
+  width: 440px;
+  margin-top: 20px;
+}
+
+.Grow_right {
+  width: 50vw;
+}
+.Grow_right img {
+  width: 100%;
+}
