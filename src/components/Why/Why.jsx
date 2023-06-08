@@ -4,6 +4,7 @@ import Green from '../../assets/green.png';
 import Blue from '../../assets/blue.png';
 import Orange from '../../assets/orange.png';
 import Purple from '../../assets/purple.png';
+import { Link } from 'react-router-dom';
 
 const Why = () => {
   return (
@@ -31,12 +32,13 @@ const Why = () => {
           Why <span>Spacestar</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Id sed auctor quisque rutrum
-          vestibulum. Porttitor mattis mauris dolor libero ultrices viverra
-          viverra nam donec. Morbi accumsan tristique auctor tellus. Elit proin
-          tellus nullam morbi gravida urna tortor sed.
+        Spacetar connects you with a compassionate community for support. 
+        Earn reward tokens by actively participating and engaging with others. 
+        Share, seek advice, and receive uplifting feedback from caring members.
         </p>
+        <Link to='/comingsoon'> 
         <Button content='Get started' />
+        </Link>
       </div>
     </div>
   );
