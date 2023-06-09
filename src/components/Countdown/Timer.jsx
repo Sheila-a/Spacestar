@@ -1,78 +1,86 @@
 import React, { Component } from "react";
-// import moment from 'moment';
 import "./Timer.css";
 
-class CountDown extends Component {
+class Countdown extends Component {
   constructor(props) {
     super(props);
     this.count = this.count.bind(this);
     this.state = {
-      days: 0,
-      minutes: 0,
-      hours: 0,
-      secounds: 0,
+      days: 35,
+      hours: 17,
+      minutes: 9,
+      seconds: 43,
       time_up: ""
     };
     this.x = null;
-    this.deadline = null;
   }
+
   count() {
-    var now = new Date().getTime();
-    var t = this.deadline - now;
-    var dd = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hh = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var mm = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    var ss = Math.floor((t % (1000 * 60)) / 1000);
+    const { days, hours, minutes, seconds } = this.state;
+    let totalSeconds =
+      days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds - 1;
 
-    var days = dd < 10 ? "0" + dd : dd;
-    var hours = hh < 10 ? "0" + hh : hh;
-    var minutes = mm < 10 ? "0" + mm : mm;
-    var seconds = ss < 10 ? "0" + ss : ss;
-
-    this.setState({ days, minutes, hours, seconds });
-
-    if (t < 0) {
+    if (totalSeconds < 0) {
       clearInterval(this.x);
       this.setState({
         days: 0,
-        minutes: 0,
         hours: 0,
+        minutes: 0,
         seconds: 0,
         time_up: "TIME IS UP"
       });
+    } else {
+      const remainingDays = Math.floor(totalSeconds / (24 * 60 * 60));
+      const remainingHours = Math.floor(
+        (totalSeconds % (24 * 60 * 60)) / (60 * 60)
+      );
+      const remainingMinutes = Math.floor(
+        (totalSeconds % (60 * 60)) / 60
+      );
+      const remainingSeconds = Math.floor(totalSeconds % 60);
+
+      this.setState({
+        days: remainingDays,
+        hours: remainingHours,
+        minutes: remainingMinutes,
+        seconds: remainingSeconds
+      });
     }
   }
-  componentDidMount() {
-    this.deadline = new Date("Oct 08, 2022 21:00:00").getTime();
 
+  componentDidMount() {
     this.x = setInterval(this.count, 1000);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.x);
+  }
+
   render() {
-    const { days, seconds, hours, minutes } = this.state;
+    const { days, hours, minutes, seconds } = this.state;
     return (
       <div id="countdown">
         <div className="col-4">
           <div className="box">
-            <p id="day">{days}</p>
+            <p id="day">{days < 10 ? "0" + days : days}</p>
             <span className="text">Days</span>
           </div>
         </div>
         <div className="col-4">
           <div className="box">
-            <p id="hour">{hours}</p>
+            <p id="hour">{hours < 10 ? "0" + hours : hours}</p>
             <span className="text">Hours</span>
           </div>
         </div>
         <div className="col-4">
           <div className="box">
-            <p id="minute">{minutes}</p>
+            <p id="minute">{minutes < 10 ? "0" + minutes : minutes}</p>
             <span className="text">Minutes</span>
           </div>
         </div>
         <div className="col-4">
           <div className="box">
-            <p id="second">{seconds}</p>
+            <p id="second">{seconds < 10 ? "0" + seconds : seconds}</p>
             <span className="text">Seconds</span>
           </div>
         </div>
@@ -81,4 +89,4 @@ class CountDown extends Component {
   }
 }
 
-export default CountDown;
+export default Countdown;

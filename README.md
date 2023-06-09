@@ -1,4 +1,4 @@
-# Spacetar - Share Your Story
+# Spacetar - A Community Empowering Mental Well-Being
 
 ![Spacetar](https://github.com/Sheila-a/Spacestar/blob/develop/src/assets/spacetar-new.png?raw=true)
 

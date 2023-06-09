@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Optin.css";
+import { Link } from 'react-router-dom';
 
 class Optin extends Component {
   modal() {
@@ -11,7 +12,9 @@ class Optin extends Component {
     return (
       <div className="optin">
         <p>Want to be the first to know when we launch?</p>
+        <Link to=''>
         <button onClick={() => this.modal()} className="optin-btn">Click Me</button>
+        </Link>
         <div id="modal">
           <div className="wrapper">
             <h3>Enter Your Email</h3>
