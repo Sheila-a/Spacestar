@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import moment from 'moment';
-import "./Time r.css";
+import "./Timer.css";
 
 class CountDown extends Component {
   constructor(props) {
