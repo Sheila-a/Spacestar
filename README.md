@@ -20,6 +20,12 @@ Join us today and embark on a journey towards improved mental well-being, where 
 
 3. **Start connecting**: Together, we can make a difference in each other's lives because sharing is caring.
 
+## Reward System
+
+- Accumulated reward tokens can be staked, earning users over 300% APR (Annual Percentage Rate).
+- Users have the ability to claim their reward tokens.
+- Token swapping is available within the Venom ecosystem, allowing users to exchange their reward tokens for other tokens.
+
 ## Ready to Get Started?
 Start sharing your story, connecting with others, and earning community incentives on Spacetar. Join us today and become part of a supportive community that understands and cares.
 
