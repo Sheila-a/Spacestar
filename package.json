@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "everscale-inpage-provider": "^0.3.61",
+    "everscale-standalone-client": "^2.1.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2"
