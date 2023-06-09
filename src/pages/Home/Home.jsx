@@ -1,6 +1,7 @@
 import Grow from '../../components/Grow/Grow';
 import Navbar from '../../components/Navbar/Navbar';
 import Why from '../../components/Why/Why';
+import GetStarted from '../../components/GetStarted/GetStarted';
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Grow />
       <Why />
+      <GetStarted/>
     </div>
   );
 };
