@@ -15,6 +15,19 @@ const Grow = () => {
   return (
     <div className={`${design.Grow} `}>
       <div className={design.Grow2}>
+      {/* <div className="comingsoon">
+      <div className="container">
+        <h1>
+          Spacetar is
+          <br />
+          Coming Soon
+        </h1>
+        <Timer />
+        <Optin />
+        <Preloader />
+      </div>
+    </div> */}
+
 
         <div className={design.Grow_left}>
           <img src={STAR} alt='' />
