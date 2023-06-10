@@ -6,7 +6,7 @@
 Share Your Story with Spacetar
 
 ## Description
-Spacetar is a decentralized application (dApp) that provides a safe and supportive platform for individuals to freely express their thoughts, emotions, and experiences. By connecting with a compassionate community, users can engage in meaningful conversations, discover new connections, share their stories, and receive valuable feedback. As an incentive, users can earn community tokens for active participation, making Spacetar a rewarding and empowering space.
+Spacetar is a mental health decentralized application (dApp) that provides a safe and supportive platform for individuals to freely express their thoughts, emotions, and experiences. By connecting with a compassionate community, users can engage in meaningful conversations, discover new connections, share their stories, and receive valuable feedback. As an incentive, users can earn community tokens for active participation, making Spacetar a rewarding and empowering space.
 
 ## Why Spacetar?
 Spacetar stands out because it offers a community that truly understands what you're going through. With our unique reward system, we encourage active engagement, enabling users to establish meaningful connections while earning community tokens. By sharing your journey, seeking advice, and receiving uplifting feedback, you can experience genuine care and support from fellow users.
