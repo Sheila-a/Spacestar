@@ -1,8 +1,18 @@
+.Soon{
+  /* height: 100vh; */
+  align-items: center;
+  
+}
+
 .Grow {
   background: #194185;
   padding: 150px 0 50px 0;
   color: #fcfcfd;
   position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Grow2 {
@@ -11,13 +21,21 @@
   align-items: center;
 }
 
+.sooncontainer{
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .Grow::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 70%;
   background-image: url(../../assets/left_ellipse.png);
   opacity: 0.2;
   background-position: top left;
@@ -25,7 +43,7 @@
   z-index: 1;
 }
 
-.Grow::after {
+/* .Grow::after {
   content: '';
   position: absolute;
   top: 90%;
@@ -37,16 +55,17 @@
   background-image: url(../../assets/bottom_elipse.png);
   background-position: center;
   background-repeat: no-repeat;
+  border: 1px solid white;
   z-index: 2;
-}
+} */
 
 .Grow2::before {
   content: '';
   position: absolute;
-  top: 15%;
+  top: 0%;
   right: 0;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 70%;
   background-image: url('../../assets/right_elipse.png');
   background-position: top right;
   background-repeat: no-repeat;
@@ -87,4 +106,41 @@
 }
 .Grow_right img {
   width: 100%;
+}
+
+.timer{
+  margin-top: 30px;
+}
+
+@media screen and (max-width:700px) {
+  .Grow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url(../../assets/left_ellipse.png);
+    opacity: 0.2;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: 80%;
+  }
+
+  .Grow2::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    background-image: url('../../assets/right_elipse.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: 3;
+    opacity: 0.2;
+    background-size: 80%;
+  }
+  
 }

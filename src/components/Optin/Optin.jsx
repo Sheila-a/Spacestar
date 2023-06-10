@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Optin.css";
-import { Link } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
 
 class Optin extends Component {
 
@@ -8,13 +8,14 @@ class Optin extends Component {
     return (
       <div className="optin">
         <p>Want to be the first to know when we launch?</p>
-        {/* <Link to={{ pathname: "https://herewecode.io/" }} target="_blank"> */}
+        <ExternalLink href="https://forms.gle/1UYUdZTyszGYhGJm9">
         <button className="optin-btn">
           <a href="https://forms.gle/1UYUdZTyszGYhGJm9" target="_blank" >
-            Click Me
+           
           </a>
+          Click Me
         </button>
-        {/* </Link> */}
+        </ExternalLink>
         <div id="modal">
           <div className="wrapper">
             <h3>Enter Your Email</h3>

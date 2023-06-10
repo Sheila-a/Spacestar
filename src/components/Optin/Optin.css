@@ -17,6 +17,13 @@
     border: none;
   }
 
+   a{
+    text-decoration: none;
+  }
+
+  .optin-btn a:hover{
+    color: white;
+  }
   .optin-btn:hover{
     border: 1px solid white;
     color: #fff;
