@@ -59,7 +59,7 @@ const GetStarted = () => {
                 Ready to get started?
             </h2>
             <p>
-            Start connecting and sharing your thoughts whileearning incentives.
+            Start connecting and sharing your thoughts while earning incentives. Claim and stake your rewards for more rewards.
             </p>
 
             <Link to='/soon'> 
