@@ -1,45 +1,10 @@
 .Why {
   background: #f5fbff;
-  /* padding: 70px 8vw 70px 8vw; */
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  /* align-items: center; */
-  /* background-image: url('../../assets/why_right.png');
-  background-position: 92% 15%;
-  background-repeat: no-repeat;
-  background-size: 120px;
-  position: relative; */
   flex-direction: column-reverse;
 }
-
-/* .Why::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../assets/why_middle.png');
-  background-position: 56% 8%;
-  background-repeat: no-repeat;
-  background-size: 70px;
-  z-index: 1;
-} */
-
-/* .Why::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../../assets/why_bottom.png');
-  background-position: 5% 94%;
-  background-repeat: no-repeat;
-  background-size: 60px;
-  z-index: 1;
-} */
 
 .Why_cards {
   /* width: 60%; */
@@ -89,7 +54,7 @@
 
 .Why_right {
   width: 90%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .Why_right p {
@@ -97,11 +62,8 @@
 }
 
 .Why_right h1 {
-  /* font-weight: 500; */
   font-size: 36px;
   margin-top: 60px;
-  /* line-height: 60px; */
-  /* letter-spacing: -0.02em; */
 }
 
 .Why_right span {
@@ -114,13 +76,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-
-    /* border: 1px solid black; */
     align-items: center;
     justify-content: center;
   }
   .Why_right{
-    width: 50vw;
+    width: 90vw;
     text-align: start;
     padding: 30px;
   }

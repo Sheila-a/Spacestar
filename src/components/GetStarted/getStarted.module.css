@@ -5,7 +5,6 @@
 .getstarted{
     margin: 40px 20px;
     text-align: center;
-    /* border: 1px solid black; */
 }
 
 .getstartedheader h2{
@@ -17,7 +16,6 @@
 .getstartedheader p{
 line-height: 30px;
 font-size: 20px;
-/* border: 1px solid black; */
 }
 
 .getstardedcard{
@@ -47,13 +45,9 @@ margin-top: 64px;
 }
 
 .ready{
-/* margin: 40px 60px; */
-border: 1px solid white;
 background-color: #194185;
 padding: 30px 20px;
 color: white;
-/* padding-bottom: 0; */
-
 }
 
 .ready h2{
@@ -79,7 +73,6 @@ color: white;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
     }
 
     .readytext{
@@ -91,11 +84,8 @@ color: white;
     .readytext {
         background-image: url(../../assets/readyarrow.png);
         background-repeat: no-repeat;
-        /* border: 1px solid white; */
-        /* background-position: bottom; */
         background-position-x: 65%;
         background-position-y: 93%;
-        /* background-attachment: fixed; */
     }
 }
 
@@ -125,18 +115,14 @@ color: white;
     .ready{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* border: 1px solid white; */
         justify-content: center;
         align-items: center;
-        /* margin: 60px 60px; */
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
         padding-right: 80px;
         padding-left: 80px;
-        /* padding-bottom: 0; */
     }
 
     .readytext {
         background-position-x: 35%;
-        /* background-position-y: 93%; */
     }
 }
