@@ -3,18 +3,18 @@ import "./Optin.css";
 import { Link } from 'react-router-dom';
 
 class Optin extends Component {
-  modal() {
-    const modal = document.getElementById("modal");
-    modal.classList.toggle("is_open");
-  }
 
   render() {
     return (
       <div className="optin">
         <p>Want to be the first to know when we launch?</p>
-        <Link to=''>
-        <button onClick={() => this.modal()} className="optin-btn">Click Me</button>
-        </Link>
+        {/* <Link to={{ pathname: "https://herewecode.io/" }} target="_blank"> */}
+        <button className="optin-btn">
+          <a href="https://forms.gle/1UYUdZTyszGYhGJm9" target="_blank" >
+            Click Me
+          </a>
+        </button>
+        {/* </Link> */}
         <div id="modal">
           <div className="wrapper">
             <h3>Enter Your Email</h3>
