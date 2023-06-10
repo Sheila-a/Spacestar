@@ -4,17 +4,12 @@ import Button from '../Button/Button';
 import design from './grow.module.css';
 import { Link } from 'react-router-dom';
 
-// import ''
-import Timer from '../Countdown/Timer'
-import Optin from '../Optin/Optin'
-import Preloader from '../Preloader/Preloader'
-
-
 
 const Grow = () => {
   return (
     <div className={`${design.Grow} `}>
       <div className={design.Grow2}>
+
         <div className={design.Grow_left}>
           <img src={STAR} alt='' />
           <p>Trusted by 3456+ users worldwide</p>

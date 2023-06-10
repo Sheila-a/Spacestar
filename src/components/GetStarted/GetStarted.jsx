@@ -2,6 +2,7 @@ import React from 'react'
 import design from './getStarted.module.css'
 import img from '../../assets/getstartedimg.png'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const GetStarted = () => {
   return (
@@ -58,9 +59,12 @@ const GetStarted = () => {
                 Ready to get started?
             </h2>
             <p>
-            Start connecting and sharing your thoughts whileearning incentives.
+            Start connecting and sharing your thoughts while earning incentives. Claim and stake your rewards for more rewards.
             </p>
-            <Button content='Get Started'/>
+
+            <Link to='/soon'> 
+                <Button content='Get started' />
+            </Link>
         </div>
         <div className={design.getstartedimg}>
             <img src={img} alt=""  />
