@@ -77,13 +77,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 71%;
   background-image: url(../../assets/left_ellipse.png);
   opacity: 0.2;
   background-position: top left;
   background-repeat: no-repeat;
   z-index: 1;
+  margin-bottom:0 ;
+  overflow: hidden;
 }
 
 .Grow::after {
@@ -107,15 +109,15 @@
 .Grow2::before {
   content: '';
   position: absolute;
-  top: 15%;
+  top: 5%;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 70%;
   background-image: url('../../assets/right_elipse.png');
   background-position: top right;
   background-repeat: no-repeat;
   z-index: 3;
-  opacity: 0.2;
+
 }
 
 
