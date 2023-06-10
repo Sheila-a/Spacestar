@@ -36,7 +36,7 @@ const Why = () => {
         Earn reward tokens by actively participating and engaging with others. 
         Share, seek advice, and receive uplifting feedback from caring members.
         </p>
-        <Link to='/comingsoon'> 
+        <Link to='/soon'> 
         <Button content='Get started' />
         </Link>
       </div>
