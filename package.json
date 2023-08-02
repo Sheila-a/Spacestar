@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^1.0.7",
     "everscale-inpage-provider": "^0.3.61",
     "everscale-standalone-client": "^2.1.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-external-link": "^2.2.0",
     "react-icons": "^4.9.0",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "viem": "^1.5.0",
+    "wagmi": "^1.3.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

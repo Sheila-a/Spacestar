@@ -10,6 +10,6 @@ const Button = ({ content, style }) => {
 };
 Button.propTypes = {
   content: PropTypes.string.isRequired,
-  style: PropTypes.object.isRequired,
+  //style: PropTypes.object.isRequired,
 };
 export default Button;

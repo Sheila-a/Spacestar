@@ -26,7 +26,7 @@ const GetStarted = () => {
                     Sign Up
                 </h3>
                 <p>
-                Connect your venom wallet and discover a place where compassion, support, and understanding intersect.
+                Connect your CELO wallet and discover a place where compassion, support, and understanding intersect.
                 </p>
             </div>
             <div className={design.card}>
